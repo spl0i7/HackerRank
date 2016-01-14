@@ -19,18 +19,10 @@ public class GameOfThrones_Anagram {
             frequency[tmp-65]++;
         }
         int largest=0;
-        int smallest;
         for(int i=0;i<frequency.length;i++){
             largest=frequency[i];
             if(largest<frequency[i]){
                 largest=frequency[i];
-            }
-        }
-        smallest=largest;
-        for(int i=0;i<frequency.length;i++){
-            smallest=frequency[i];
-            if(smallest>frequency[i] && frequency[i]!=0){
-                smallest=frequency[i];
             }
         }
         int numberOfOdd=0;
