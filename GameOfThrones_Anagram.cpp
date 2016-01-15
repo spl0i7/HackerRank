@@ -15,14 +15,14 @@ int main(void){
             frequency[tmp-65]++;
         }
 	int largest=0;
-        for(int i=0;i<length;i++){
+        for(int i=0;i<26;i++){
             largest=frequency[i];
             if(largest<frequency[i]){
                 largest=frequency[i];
             }
         }
 	int numberOfOdd=0;
-        for(int i=0;i<length;i++){
+        for(int i=0;i<26;i++){
             if(frequency[i]%2 != 0){
                 numberOfOdd++;
             }
